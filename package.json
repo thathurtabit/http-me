@@ -7,7 +7,7 @@
   "umd:main": "dist/umd/index.js",
   "types": "dist/types/index.d.js",
   "bin": {
-    "http-me": "./dist/esm/index.js"
+    "http-me": "./dist/cjs/index.js"
   },
   "scripts": {
     "postinstall": "husky install",
