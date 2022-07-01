@@ -8,11 +8,11 @@ export enum EStatusCodeGroup {
 
 export interface IHttpStatusCode {
   group: EStatusCodeGroup;
-  number: number;
+  statusCode: number;
   title: string;
   description: string;
   moreLink: string;
   specLink: string;
-  removed?: boolean;
+  deprecated?: boolean;
   experimental?: boolean;
 }
