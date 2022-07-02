@@ -7,7 +7,7 @@ import { IHttpStatusCode } from "../data/httpStatusCodes.types";
  */
 export const getStatusCodeInfo = (inputValue: string): IHttpStatusCode | undefined => {
   if (!inputValue) return undefined;
-  const trimmedInputValue = inputValue.trim();
+  const trimmedInputValue = inputValue.trim().replace(/[^\w\s!?]/g,''); //?
   const isStatusCode = /^[0-9]{3}$/.test(inputValue);
   const searchedInput = isStatusCode ? parseInt(inputValue) : trimmedInputValue;
   return httpStatusCodes.find(
