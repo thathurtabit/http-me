@@ -58,7 +58,7 @@ console.log(`
   Status Code: ${chalk.red(statusCode)}
   Title: ${chalk.red(title)}
   Group: ${chalk.red(group)}
-  ${deprecated ? chalk.red('Deprecated') : ''}
+  ${deprecated ? `Note: ${chalk.red(`!Deprecated!\n`)}` : experimental ? `Note: ${chalk.red(`!Experimental!\n`)}` : ''}
   Description:
   ${chalk.red(description)}
 

@@ -17,5 +17,3 @@ export const getStatusCodeInfo = (inputValue: string): IHttpStatusCode | undefin
     }
   );
 }
-
-getStatusCodeInfo('   '); //?
