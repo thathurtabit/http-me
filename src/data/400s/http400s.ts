@@ -285,4 +285,72 @@ export const http400s: IHttpStatusCode[] = [{
   another action and that action failed.`,
   moreLink: "https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-424-status-code/",
   specLink: "https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-424-status-code/",
+}, {
+  group: EStatusCodeGroup.CLIENT_ERROR,
+  statusCode: 425,
+  title: "Too Early",
+  description: `The HyperText Transfer Protocol (HTTP) 425
+  Too Early response status code indicates that the server
+  is unwilling to risk processing a request that might
+  be replayed, which creates the potential for a
+  replay attack.`,
+  moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/425",
+  specLink: "https://httpwg.org/specs/rfc8470.html#status",
+  experimental: true
+}, {
+  group: EStatusCodeGroup.CLIENT_ERROR,
+  statusCode: 426,
+  title: "Upgrade Required",
+  description: `The HTTP 426 Upgrade Required client error
+  response code indicates that the server refuses to
+  perform the request using the current protocol but
+  might be willing to do so after the client upgrades
+  to a different protocol.`,
+  moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/426",
+  specLink: "https://httpwg.org/specs/rfc7231.html#section-6.5.15",
+}, {
+  group: EStatusCodeGroup.CLIENT_ERROR,
+  statusCode: 428,
+  title: "Precondition Required",
+  description: `The origin server requires the request to
+  be conditional. This response is intended to prevent
+  the 'lost update' problem, where a client GETs a
+  resource's state, modifies it and PUTs it back to
+  the server, when meanwhile a third party has modified
+  the state on the server, leading to a conflict.`,
+  moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/428",
+  specLink: "https://www.rfc-editor.org/rfc/rfc6585#section-3",
+}, {
+  group: EStatusCodeGroup.CLIENT_ERROR,
+  statusCode: 429,
+  title: "Too Many Requests",
+  description: `The HTTP 429 Too Many Requests response
+  status code indicates the user has sent too many
+  requests in a given amount of time ("rate limiting").
+  A Retry-After header might be included to this
+  response indicating how long to wait before making
+  a new request.`,
+  moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+  specLink: "https://www.rfc-editor.org/rfc/rfc6585#section-4",
+}, {
+  group: EStatusCodeGroup.CLIENT_ERROR,
+  statusCode: 431,
+  title: "Request Header Fields Too Large",
+  description: `The server is unwilling to process the
+  request because its header fields are too large.
+  The request may be resubmitted after reducing the
+  size of the request header fields.`,
+  moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/431",
+  specLink: "https://www.rfc-editor.org/rfc/rfc6585#section-5",
+}, {
+  group: EStatusCodeGroup.CLIENT_ERROR,
+  statusCode: 451,
+  title: "Unavailable For Legal Reasons",
+  description: `The HyperText Transfer Protocol (HTTP) 451
+  Unavailable For Legal Reasons client error response
+  code indicates that the user requested a resource that
+  is not available due to legal reasons, such as a web
+  page for which a legal action has been issued.`,
+  moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/451",
+  specLink: "https://httpwg.org/specs/rfc7725.html#n-451-unavailable-for-legal-reasons",
 }]
