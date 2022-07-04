@@ -1,8 +1,9 @@
-# http-me: status code lookup
+# http-me: status code lookup CLI
 
 
 
-[![npm package](https://img.shields.io/badge/npm%20i-example--typescript--package-brightgreen)](https://www.npmjs.com/package/http-me) [![version number](https://img.shields.io/npm/v/http-me?color=green&label=version)](https://github.com/thathurtabit/http-me/releases) [![Actions Status](https://github.com/thathurtabit/http-me/workflows/Test/badge.svg)](https://github.com/thathurtabit/http-me/actions) [![License](https://img.shields.io/github/license/thathurtabit/http-me)](https://github.com/thathurtabit/http-me/blob/main/LICENSE)
+[![npm package](https://img.shields.io/badge/npm%20i%20--g-http--me-brightgreen)](https://www.npmjs.com/package/http-me)
+[![npm package](https://img.shields.io/badge/yarn%20add%20global-http--me-brightgreen)](https://yarnpkg.com/package/http-me) [![version number](https://img.shields.io/npm/v/http-me?color=green&label=version)](https://github.com/thathurtabit/http-me/releases) [![Actions Status](https://github.com/thathurtabit/http-me/workflows/Test/badge.svg)](https://github.com/thathurtabit/http-me/actions) [![License](https://img.shields.io/github/license/thathurtabit/http-me)](https://github.com/thathurtabit/http-me/blob/main/LICENSE)
 
 If you're anything like me, you'll forget all but a handful of HTTP Status Codes, so why not install and then run a quick lookup from your terminal?
 
@@ -10,6 +11,10 @@ If you're anything like me, you'll forget all but a handful of HTTP Status Codes
 
 ```bash
 npm i -g http-me
+```
+or
+```bash
+yarn global add http-me
 ```
 
 ## Usage example

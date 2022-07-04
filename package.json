@@ -1,7 +1,7 @@
 {
   "name": "http-me",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "Quickly look up HTTP Status Codes with this CLI",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "umd:main": "dist/umd/index.js",
