@@ -1,7 +1,7 @@
 import { EStatusCodeGroup, IHttpStatusCode } from "../httpStatusCodes.types";
 
 export const http400s: IHttpStatusCode[] = [{
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 400,
   title: "Bad Request",
   description: `The HyperText Transfer Protocol (HTTP) 400
@@ -13,7 +13,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.5.1",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 401,
   title: "Unauthorized",
   description: `The HyperText Transfer Protocol (HTTP) 401
@@ -26,7 +26,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
   specLink: "https://httpwg.org/specs/rfc7235.html#status.401",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 402,
   title: "Payment Required",
   description: `The HTTP 402 Payment Required is a nonstandard
@@ -38,7 +38,7 @@ export const http400s: IHttpStatusCode[] = [{
   specLink: "https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.2",
   experimental: true
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 403,
   title: "Forbidden",
   description: `The HTTP 403 Forbidden response status code
@@ -51,7 +51,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.403",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 404,
   title: "Not Found",
   description: `The HTTP 404 Not Found response status code
@@ -65,7 +65,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.404",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 405,
   title: "Method Not Allowed",
   description: `The HyperText Transfer Protocol (HTTP)
@@ -78,7 +78,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.5.5",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 406,
   title: "Not Acceptable",
   description: `In practice, this error is very rarely used.
@@ -94,7 +94,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.406",
 },{
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 407,
   title: "Proxy Authentication Required",
   description: `The HTTP 407 Proxy Authentication Required
@@ -107,7 +107,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/407",
   specLink: "https://httpwg.org/specs/rfc7235.html#status.407",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 408,
   title: "Request Timeout",
   description: `The HyperText Transfer Protocol (HTTP)
@@ -121,7 +121,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/408",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.5.7",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 409,
   title: "Conflict",
   description: `The HTTP 409 Conflict response status code
@@ -134,7 +134,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.409",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 410,
   title: "Gone",
   description: `The HyperText Transfer Protocol (HTTP) 410
@@ -147,7 +147,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.410",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 411,
   title: "Length Required",
   description: `The HyperText Transfer Protocol (HTTP) 411
@@ -157,7 +157,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/411",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.5.10",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 412,
   title: "Precondition Failed",
   description: `The HyperText Transfer Protocol (HTTP) 412
@@ -172,7 +172,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/412",
   specLink: "https://httpwg.org/specs/rfc7232.html#status.412",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 413,
   title: "Payload Too Large",
   description: `The HTTP 413 Payload Too Large response
@@ -182,7 +182,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.5.11",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 414,
   title: "URI Too Long",
   description: `The HTTP 414 URI Too Long response status
@@ -191,7 +191,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/414",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.5.12",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 415,
   title: "Unsupported Media Type",
   description: `The HTTP 415 Unsupported Media Type client error
@@ -203,7 +203,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.5.13",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 416,
   title: "Range Not Satisfiable",
   description: `The HyperText Transfer Protocol (HTTP) 416 Range
@@ -215,7 +215,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/416",
   specLink: "https://httpwg.org/specs/rfc7233.html#status.416",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 417,
   title: "Expectation Failed",
   description: `The HTTP 417 Expectation Failed client error
@@ -224,7 +224,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/417",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.5.14",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 418,
   title: "I'm a teapot",
   description: `The HTTP 418 I'm a teapot client error
@@ -237,7 +237,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418",
   specLink: "https://www.rfc-editor.org/rfc/rfc2324#section-2.3.2",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 421,
   title: "Misdirected Request",
   description: `The request was directed at a server that
@@ -248,7 +248,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-421-status-code/",
   specLink: "https://datatracker.ietf.org/doc/html/rfc7540#section-9.1.2",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 421,
   title: "Misdirected Request",
   description: `The request was directed at a server that
@@ -259,7 +259,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-421-status-code/",
   specLink: "https://datatracker.ietf.org/doc/html/rfc7540#section-9.1.2",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 422,
   title: "Unprocessable Entity",
   description: `The HyperText Transfer Protocol (HTTP) 422
@@ -270,14 +270,14 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
   specLink: "https://www.rfc-editor.org/rfc/rfc4918#section-11.2",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 423,
   title: "Locked",
   description: `The resource that is being accessed is locked.`,
   moreLink: "https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-423-status-code/",
   specLink: "https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-423-status-code/",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 424,
   title: "Failed Dependency",
   description: `The method could not be performed on the
@@ -286,7 +286,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-424-status-code/",
   specLink: "https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-424-status-code/",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 425,
   title: "Too Early",
   description: `The HyperText Transfer Protocol (HTTP) 425
@@ -298,7 +298,7 @@ export const http400s: IHttpStatusCode[] = [{
   specLink: "https://httpwg.org/specs/rfc8470.html#status",
   experimental: true
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 426,
   title: "Upgrade Required",
   description: `The HTTP 426 Upgrade Required client error
@@ -309,7 +309,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/426",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.5.15",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 428,
   title: "Precondition Required",
   description: `The origin server requires the request to
@@ -321,7 +321,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/428",
   specLink: "https://www.rfc-editor.org/rfc/rfc6585#section-3",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 429,
   title: "Too Many Requests",
   description: `The HTTP 429 Too Many Requests response
@@ -333,7 +333,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
   specLink: "https://www.rfc-editor.org/rfc/rfc6585#section-4",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 431,
   title: "Request Header Fields Too Large",
   description: `The server is unwilling to process the
@@ -343,7 +343,7 @@ export const http400s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/431",
   specLink: "https://www.rfc-editor.org/rfc/rfc6585#section-5",
 }, {
-  group: EStatusCodeGroup.CLIENT_ERROR,
+  category: EStatusCodeGroup.CLIENT_ERROR,
   statusCode: 451,
   title: "Unavailable For Legal Reasons",
   description: `The HyperText Transfer Protocol (HTTP) 451

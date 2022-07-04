@@ -1,38 +1,31 @@
 #!/usr/bin/env node
 
 import chalk from "chalk";
-import boxen, { Options } from "boxen";
 import { getStatusCodeInfo } from "./utils/getStatusCodeInfo";
+import { getCategoryColor } from './utils/getCategoryColor';
 
 const inputValue = process.argv[2];
 
 const statusCodeInfo = getStatusCodeInfo(inputValue);
 
-const boxenOptions: Options = {
- padding: 1,
- margin: 0,
- borderStyle: "singleDouble",
- borderColor: "magenta",
- backgroundColor: "#fff"
-};
+const {category: group, statusCode, title, description, moreLink, specLink, deprecated, experimental} = statusCodeInfo ?? {}
 
 const responseTitle = `
 ------------------------------------------------------
-  ${chalk.red('http-me')}: a quick HTTP status code lookup
+  ${getCategoryColor('http-me', group)}: a quick HTTP status code lookup
 ------------------------------------------------------`
 
 const responseFooter = `
 ------------------------------------------------------
 `
 
-const {group, statusCode, title, description, moreLink, specLink, deprecated, experimental} = statusCodeInfo ?? {}
-
 // Handle no input
 if (!inputValue) {
   console.log(`
   ${responseTitle}
 
-  Please enter a search value, i.e. "${chalk.red('http-me 200')}". 
+  Please enter a search value, i.e.:
+  "${chalk.blue('http-me 200')}" or "${chalk.blue(`http-me bad gateway`)}". 
   ${responseFooter}
 `
 )
@@ -45,7 +38,7 @@ if (!statusCodeInfo) {
 
   Uh-oh. No matches found for "${chalk.red(inputValue)}".
   
-  ${chalk.italic('Maybe cats can help?')} ${chalk.underline('https://http.cat')}
+  ${chalk.italic('Maybe cats can help?')} ${chalk.blue.underline('https://http.cat')}
 ${responseFooter}`
 )
 process.exit(0);
@@ -55,14 +48,14 @@ process.exit(0);
 console.log(`
   ${responseTitle}
 
-  Status Code: ${chalk.red(statusCode)}
-  Title: ${chalk.red(title)}
-  Group: ${chalk.red(group)}
-  ${deprecated ? `Note: ${chalk.red(`!Deprecated!\n`)}` : experimental ? `Note: ${chalk.red(`!Experimental!\n`)}` : ''}
-  Description:
-  ${chalk.red(description)}
+  ${chalk.bold('Status Code')}: ${getCategoryColor(statusCode, group)}
+  ${chalk.bold('Title')}: ${getCategoryColor(title, group)}
+  ${chalk.bold('Category')}: ${getCategoryColor(group, group)}
+  ${deprecated ? `${chalk.bold('Note')}: ${chalk.red(`!Deprecated!\n`)}` : experimental ? `${chalk.bold('Note')}: ${chalk.red(`!Experimental!\n`)}` : ''}
+  ${chalk.bold('Description')}:
+  ${getCategoryColor(description, group)};
 
-  Info: ${chalk.red(moreLink)}
-  Spec: ${chalk.red(specLink)}
+  ${chalk.bold('Info')}: ${getCategoryColor(moreLink, group)}
+  ${chalk.bold('Spec')}: ${getCategoryColor(specLink, group)}
   ${responseFooter}`
 )

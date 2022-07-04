@@ -1,7 +1,7 @@
 import { EStatusCodeGroup, IHttpStatusCode } from "../httpStatusCodes.types";
 
 export const http300s: IHttpStatusCode[] = [{
-  group: EStatusCodeGroup.REDIRECTION,
+  category: EStatusCodeGroup.REDIRECTION,
   statusCode: 300,
   title: "Multiple Choices",
   description: `The request has more than one possible response.
@@ -12,7 +12,7 @@ export const http300s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/300",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.4.1"
 }, {
-  group: EStatusCodeGroup.REDIRECTION,
+  category: EStatusCodeGroup.REDIRECTION,
   statusCode: 301,
   title: "Moved Permanently",
   description: `The HyperText Transfer Protocol (HTTP) 301 Moved Permanently
@@ -23,7 +23,7 @@ export const http300s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.301"
 }, {
-  group: EStatusCodeGroup.REDIRECTION,
+  category: EStatusCodeGroup.REDIRECTION,
   statusCode: 302,
   title: "Found",
   description: `The HyperText Transfer Protocol (HTTP) 302 Found
@@ -35,7 +35,7 @@ export const http300s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.302"
 }, {
-  group: EStatusCodeGroup.REDIRECTION,
+  category: EStatusCodeGroup.REDIRECTION,
   statusCode: 303,
   title: "See Other",
   description: `The HyperText Transfer Protocol (HTTP) 303 See Other
@@ -48,7 +48,7 @@ export const http300s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/303",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.303"
 }, {
-  group: EStatusCodeGroup.REDIRECTION,
+  category: EStatusCodeGroup.REDIRECTION,
   statusCode: 304,
   title: "Not Modified",
   description: `The HTTP 304 Not Modified client redirection response
@@ -60,7 +60,7 @@ export const http300s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/304",
   specLink: "https://httpwg.org/specs/rfc7232.html#status.304"
 },  {
-  group: EStatusCodeGroup.REDIRECTION,
+  category: EStatusCodeGroup.REDIRECTION,
   statusCode: 305,
   title: "Use Proxy",
   description: `Defined in a previous version of the HTTP specification
@@ -71,7 +71,7 @@ export const http300s: IHttpStatusCode[] = [{
   specLink: "https://tools.ietf.org/html/rfc7231#section-6.4.5",
   deprecated: true
 }, {
-  group: EStatusCodeGroup.REDIRECTION,
+  category: EStatusCodeGroup.REDIRECTION,
   statusCode: 306,
   title: "- unused -",
   description: `This response code is no longer used; it is just reserved.
@@ -80,7 +80,7 @@ export const http300s: IHttpStatusCode[] = [{
   specLink: "https://webconcepts.info/concepts/http-status-code/306",
   deprecated: true
 }, {
-  group: EStatusCodeGroup.REDIRECTION,
+  category: EStatusCodeGroup.REDIRECTION,
   statusCode: 307,
   title: "Temporary Redirect",
   description: `The server sends this response to direct the client to
@@ -92,7 +92,7 @@ export const http300s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/307",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.307",
 }, {
-  group: EStatusCodeGroup.REDIRECTION,
+  category: EStatusCodeGroup.REDIRECTION,
   statusCode: 308,
   title: "Permanent Redirect",
   description: `The HyperText Transfer Protocol (HTTP) 308

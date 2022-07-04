@@ -1,13 +1,13 @@
 export enum EStatusCodeGroup {
-  INFORMATIONAL = "Informational responses",
-  SUCCESSFUL = "Successful responses",
-  REDIRECTION = "Redirection messages",
-  CLIENT_ERROR = "Client error responses",
-  SERVER_ERROR = "Server error responses",
+  INFORMATIONAL = "Informational Responses",
+  SUCCESSFUL = "Successful Responses",
+  REDIRECTION = "Redirection Messages",
+  CLIENT_ERROR = "Client Error Responses",
+  SERVER_ERROR = "Server Error Responses",
 }
 
 export interface IHttpStatusCode {
-  group: EStatusCodeGroup;
+  category: EStatusCodeGroup;
   statusCode: number;
   title: string;
   description: string;

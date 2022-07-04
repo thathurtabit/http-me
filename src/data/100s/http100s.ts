@@ -1,7 +1,7 @@
 import { EStatusCodeGroup, IHttpStatusCode } from "../httpStatusCodes.types";
 
 export const http100s: IHttpStatusCode[] = [{
-  group: EStatusCodeGroup.INFORMATIONAL,
+  category: EStatusCodeGroup.INFORMATIONAL,
   statusCode: 100,
   title: "Continue",
   description: `The HTTP 100 Continue informational
@@ -11,7 +11,7 @@ export const http100s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/100",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.100"
 }, {
-  group: EStatusCodeGroup.INFORMATIONAL,
+  category: EStatusCodeGroup.INFORMATIONAL,
   statusCode: 101,
   title: "Switching Protocols",
   description: `The HTTP 101 Switching Protocols
@@ -21,7 +21,7 @@ export const http100s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/101",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.2.2"
 }, {
-  group: EStatusCodeGroup.INFORMATIONAL,
+  category: EStatusCodeGroup.INFORMATIONAL,
   statusCode: 102,
   title: "Processing",
   description: `This code indicates that the server
@@ -31,7 +31,7 @@ export const http100s: IHttpStatusCode[] = [{
   specLink: "https://datatracker.ietf.org/doc/html/rfc2518#section-10.1",
   deprecated: true
 }, {
-  group: EStatusCodeGroup.INFORMATIONAL,
+  category: EStatusCodeGroup.INFORMATIONAL,
   statusCode: 103,
   title: "Early Hints",
   description: `This status code is primarily intended

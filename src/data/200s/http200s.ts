@@ -1,7 +1,7 @@
 import { EStatusCodeGroup, IHttpStatusCode } from "../httpStatusCodes.types";
 
 export const http200s: IHttpStatusCode[] = [{
-  group: EStatusCodeGroup.SUCCESSFUL,
+  category: EStatusCodeGroup.SUCCESSFUL,
   statusCode: 200,
   title: "OK",
   description: `The request succeeded. The result
@@ -23,7 +23,7 @@ export const http200s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.200"
 }, {
-  group: EStatusCodeGroup.SUCCESSFUL,
+  category: EStatusCodeGroup.SUCCESSFUL,
   statusCode: 201,
   title: "Created",
   description: `
@@ -37,7 +37,7 @@ export const http200s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.201"
 }, {
-  group: EStatusCodeGroup.SUCCESSFUL,
+  category: EStatusCodeGroup.SUCCESSFUL,
   statusCode: 202,
   title: "Accepted",
   description: `The request has been received but not
@@ -49,7 +49,7 @@ export const http200s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.3.3"
 }, {
-  group: EStatusCodeGroup.SUCCESSFUL,
+  category: EStatusCodeGroup.SUCCESSFUL,
   statusCode: 203,
   title: "Non-Authoritative Information",
   description: `This response code means the returned
@@ -62,7 +62,7 @@ export const http200s: IHttpStatusCode[] = [{
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.3.4"
 },
 {
-  group: EStatusCodeGroup.SUCCESSFUL,
+  category: EStatusCodeGroup.SUCCESSFUL,
   statusCode: 204,
   title: "No Content",
   description: `There is no content to send for this
@@ -72,7 +72,7 @@ export const http200s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/204",
   specLink: "https://httpwg.org/specs/rfc7231.html#status.204"
 }, {
-  group: EStatusCodeGroup.SUCCESSFUL,
+  category: EStatusCodeGroup.SUCCESSFUL,
   statusCode: 205,
   title: "Reset Content",
   description: `The HTTP 205 Reset Content response
@@ -82,7 +82,7 @@ export const http200s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/205",
   specLink: "https://httpwg.org/specs/rfc7231.html#section-6.3.6"
 }, {
-  group: EStatusCodeGroup.SUCCESSFUL,
+  category: EStatusCodeGroup.SUCCESSFUL,
   statusCode: 206,
   title: "Partial Content",
   description: `This response code is used when the
@@ -91,7 +91,7 @@ export const http200s: IHttpStatusCode[] = [{
   moreLink: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/206",
   specLink: "https://httpwg.org/specs/rfc7233.html#status.206"
 }, {
-  group: EStatusCodeGroup.SUCCESSFUL,
+  category: EStatusCodeGroup.SUCCESSFUL,
   statusCode: 207,
   title: "Multi-Status",
   description: `A Multi-Status response conveys
@@ -101,7 +101,7 @@ export const http200s: IHttpStatusCode[] = [{
   specLink: "https://datatracker.ietf.org/doc/html/rfc4918#section-13",
   deprecated: true,
 }, {
-  group: EStatusCodeGroup.SUCCESSFUL,
+  category: EStatusCodeGroup.SUCCESSFUL,
   statusCode: 208,
   title: "Already Reported",
   description: `Used inside a <dav:propstat> response
@@ -111,7 +111,7 @@ export const http200s: IHttpStatusCode[] = [{
   specLink: "https://tools.ietf.org/html/rfc5842#section-7.1",
   deprecated: true,
 }, {
-  group: EStatusCodeGroup.SUCCESSFUL,
+  category: EStatusCodeGroup.SUCCESSFUL,
   statusCode: 226,
   title: "IM Used",
   description: `The server has fulfilled a GET request for the
