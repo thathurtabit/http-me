@@ -17,52 +17,25 @@ or
 yarn global add http-me
 ```
 
+---
+
 ## Usage example
-In your terminal, enter `http-me` and then a status code number, ie:
+In your terminal, enter `http-me` and then a status code number, ie: `http-me 401`:
+
+<img width="625" alt="http-me-401" style="margin-bottom: 20px" src="https://user-images.githubusercontent.com/1598625/177379439-75c4cbe0-c60c-4adf-8843-aa9f1dd9b391.png">
+
+
+Or you can search for a status code by name, ie: `http-me "accepted"`:
+
+<img width="575" alt="http-me-accepted" src="https://user-images.githubusercontent.com/1598625/177379446-7facbb98-d004-4a85-b7e8-93d06346e3fa.png">
+
+---
+
+## Uninstall
+
+```bash
+npm uninstall -g http-me
 ```
-$ http-me 400
-
-------------------------------------------------------
-  http-me: a quick HTTP status code lookup
-------------------------------------------------------
-
-  Status Code: 400
-  Title: Bad Request
-  Category: Client Error Responses
-
-  Description:
-  The HyperText Transfer Protocol (HTTP) 400
-  Bad Request response status code indicates that the server
-  cannot or will not process the request due to something
-  that is perceived to be a client error.
-
-  Info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
-  Spec: https://httpwg.org/specs/rfc7231.html#section-6.5.1
-
-------------------------------------------------------
-```
-
-You can also search for a status code title, such as:
-
-```
-$ http-me "Found"
-
-------------------------------------------------------
-  http-me: a quick HTTP status code lookup
-------------------------------------------------------
-
-  Status Code: 302
-  Title: Found
-  Category: Redirection Messages
-
-  Description:
-  The HyperText Transfer Protocol (HTTP) 302 Found
-  redirect status response code indicates that the resource requested
-  has been temporarily moved to the URL given by the Location header.
-
-  Info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302
-  Spec: https://httpwg.org/specs/rfc7231.html#status.302
-
-------------------------------------------------------
-
-```
+or
+```bash
+yarn global remove http-me
