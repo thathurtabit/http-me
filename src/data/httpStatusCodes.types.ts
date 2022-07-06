@@ -4,6 +4,7 @@ export enum EStatusCodeGroup {
   REDIRECTION = "Redirection Messages",
   CLIENT_ERROR = "Client Error Responses",
   SERVER_ERROR = "Server Error Responses",
+  MISC = "???"
 }
 
 export interface IHttpStatusCode {

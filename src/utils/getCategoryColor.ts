@@ -10,6 +10,7 @@ export const getCategoryColor = (input: string | number | undefined, group: ESta
       return chalk.green(textToReturn);
     case EStatusCodeGroup.REDIRECTION:
       return chalk.magenta(textToReturn);
+    case EStatusCodeGroup.MISC:
     case EStatusCodeGroup.CLIENT_ERROR:
       return chalk.red(textToReturn);
     case EStatusCodeGroup.SERVER_ERROR:
