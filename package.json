@@ -1,6 +1,6 @@
 {
   "name": "http-me",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Quickly look up HTTP Status Codes with this CLI",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
